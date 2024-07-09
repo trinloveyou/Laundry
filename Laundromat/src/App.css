@@ -1,0 +1,89 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* ปรับให้เต็มหน้าจอแนวตั้ง */
+  width: auto; /* ปรับให้เต็มหน้าจอแนวนอน */
+  margin: 0;
+  background-color: #fefefe; /* พื้นหลังของหน้า */
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* เรียงคอนเทนเนอร์เป็นแนวตั้ง */
+  background-color: rgb(0, 0, 0); /* พื้นหลังสีเทา */
+  padding: 10px; /* ลด padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 1000px; /* ปรับความกว้างตามหน้าจอ */
+  max-width: 600px; /* ปรับขนาดสูงสุดให้เล็กลง */
+}
+
+h2 {
+  font-size: 35px; /* ปรับขนาดฟอนต์ตามต้องการ */
+  color: #ffffff; /* ตัวเลือกสีฟอนต์ */
+  margin: 0; /* กำจัดระยะห่างด้านบนและด้านล่าง */
+  padding-top: 10px; /* ระยะห่างด้านบนภายในคอนเทนเนอร์ */
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between; /* จัดให้มีพื้นที่ระหว่างไอคอน */
+  align-items: center; /* จัดไอคอนให้อยู่ตรงกลางของคอนเทนเนอร์ */
+  background-color: rgb(255, 255, 255); /* พื้นหลังสีเทาอ่อน */
+  padding: 20px; /* ลด padding */
+  border-radius: 5px;
+  margin-bottom: 5px; /* ระยะห่างระหว่างคอนเทนเนอร์ */
+  width: 92%; /* ให้คอนเทนเนอร์มีความกว้างเต็มที่ */
+  position: relative; /* เพิ่มตำแหน่งญาติสำหรับการกำหนดตำแหน่งภายในคอนเทนเนอร์ */
+}
+
+.checkmark-container {
+  display: flex;
+  justify-content: left; /* จัดให้อยู่ตรงกลางในแนวนอน */
+  margin-left: 100px;
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.wash {
+  /* Your styles here */
+  color: rgb(0, 0, 0); /* Example style */
+  font-size: 16px; /* Example style */
+  white-space: nowrap;
+}
+
+.free {
+  margin-: 100px;
+}
+
+.kilogram {
+  position: absolute; /* เพิ่มตำแหน่งสัมบูรณ์ */
+  top: 0; /* จัดให้อยู่บนสุด */
+  right: 0; /* จัดให้อยู่ขวาสุด */
+  margin-right: 20px; /* ระยะห่างจากขอบขวา */
+  margin-top: 20px; /* ระยะห่างจากขอบบน */
+  font-size: 16px;
+  white-space: nowrap;
+  color: rgb(0, 0, 0); /* ตั้งค่าสีฟอนต์ */
+}
+.price {
+  position: absolute; /* เพิ่มตำแหน่งสัมบูรณ์ */
+  top: 50px; /* จัดให้อยู่ต่ำกว่า .kilogram */
+  right: 0; /* จัดให้อยู่ขวาสุด */
+  margin-right: 20px; /* ระยะห่างจากขอบขวา */
+  font-size: 16px;
+  white-space: nowrap;
+  color: rgb(0, 0, 0); /* ตั้งค่าสีฟอนต์ */
+}
+.content {
+  cursor: pointer; /* เปลี่ยน cursor เป็น pointer เมื่อชี้ */
+  border: 3px solid transparent; /* กำหนด border โปร่งใส */
+  transition: border-color 0.8s ease; /* ทำ transition เมื่อมีการเปลี่ยนแปลง border-color */
+}
+
+.content:hover {
+  border-color: #0091ff; /* เปลี่ยนสีของ border เมื่อ hover */
+}
