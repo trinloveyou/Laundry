@@ -84,7 +84,7 @@ function App() {
   };
 
   const handlePay = (machineId) => {
-    updateMachineStatus(machineId, "กำลังซัก", true, 65); // 65 seconds countdown
+    updateMachineStatus(machineId, "กำลังซัก", true, 80);
     setShowModal(false);
   };
 
